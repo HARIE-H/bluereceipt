@@ -366,6 +366,10 @@ input#clientPhoneNo {
   line-height: 16px;
 }
 
+.left .footer__content a {
+  color: #2d55fb;
+}
+
 .right {
   padding: 40px 160px 40px 120px;
   background-color: #fff;

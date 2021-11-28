@@ -153,6 +153,10 @@
             color: $blue;
             letter-spacing: -0.6px;
             line-height: 16px;
+
+            a{
+                color: $blue-medium;
+            }
         }
     }
 }
