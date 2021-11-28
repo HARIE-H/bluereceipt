@@ -1,13 +1,15 @@
 input{
-
     .info-form__input-wrapper &{
         width: 100%;
         padding: 12px;
         border-radius: 6px;
-        margin-top: 12px;
+        margin-top: 8px;
+        color: $blue-dark;
         border: 2px solid #e8ecf4;
-
         transition: all 0.5s ease;
+    }
+    &::placeholder{
+        color:#8f9bb7;
     }
     &:hover{
         border-color:#2d55fb;
@@ -15,6 +17,15 @@ input{
     &:focus{
         outline: 4px solid #d6e7ff;
         border-color:#2d55fb;
+    }
+    &[type=checkbox]{
+        width: 16px;
+        height: 16px;
+        color: #e8ecf4;
+
+        &:focus{
+            outline: none;
+        }
     }
 }
 
@@ -25,7 +36,7 @@ input#clientPhoneNo {
 
 .iti{
     width: 100%;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 .iti__country-list{

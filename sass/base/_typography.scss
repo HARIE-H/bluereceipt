@@ -1,8 +1,18 @@
 .head{
+    &-l{
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    &-m{
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+    }
     &-s{
         font-family: "Inter", Arial, Helvetica, sans-serif;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -12,5 +22,20 @@
         font-family: 'Eudoxus', sans-serif;
         font-weight: bold;
         font-size: 36px;
+    }
+    &-m{
+        font-family: 'Eudoxus', sans-serif;
+        font-weight: lighter;
+        font-size: 16px;
+    }
+    &-xs{
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    &-s{
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 12px;
     }
 }

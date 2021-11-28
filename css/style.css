@@ -42,10 +42,22 @@ li {
   list-style: none;
 }
 
+.head-l {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.head-m {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+}
+
 .head-s {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .text-l {
@@ -54,14 +66,49 @@ li {
   font-size: 36px;
 }
 
+.text-m {
+  font-family: 'Eudoxus', sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.text-xs {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text-s {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
 .info-form__input-wrapper input {
   width: 100%;
   padding: 12px;
   border-radius: 6px;
-  margin-top: 12px;
+  margin-top: 8px;
+  color: #060b27;
   border: 2px solid #e8ecf4;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+input::-webkit-input-placeholder {
+  color: #8f9bb7;
+}
+
+input:-ms-input-placeholder {
+  color: #8f9bb7;
+}
+
+input::-ms-input-placeholder {
+  color: #8f9bb7;
+}
+
+input::placeholder {
+  color: #8f9bb7;
 }
 
 input:hover {
@@ -73,13 +120,23 @@ input:focus {
   border-color: #2d55fb;
 }
 
+input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  color: #e8ecf4;
+}
+
+input[type=checkbox]:focus {
+  outline: none;
+}
+
 input#clientPhoneNo {
   padding: 10px 10px 10px 86px;
 }
 
 .iti {
   width: 100%;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .iti__country-list {
@@ -121,6 +178,9 @@ input#clientPhoneNo {
   padding: 12px;
   border-radius: 6px;
   border: none;
+  color: #d7dbe5;
+  border: 1px solid #e8ecf4;
+  background-color: transparent;
 }
 
 .left {
@@ -156,6 +216,8 @@ input#clientPhoneNo {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 100px;
+  -webkit-box-shadow: 0 70px 150px -40px rgba(33, 55, 103, 0.2);
+          box-shadow: 0 70px 150px -40px rgba(33, 55, 103, 0.2);
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -208,7 +270,22 @@ input#clientPhoneNo {
 
 .left .summary-table__title {
   text-align: left;
+  font-size: 18px;
   height: 30px;
+}
+
+.left .summary-table tr.text-m--wgt {
+  color: #060b27;
+  font-weight: normal;
+}
+
+.left .summary-table .item-count {
+  color: #8f9bb7;
+}
+
+.left .summary-table tr:last-child {
+  color: #2d55fb;
+  font-weight: 600;
 }
 
 .left .summary-table td {
@@ -239,6 +316,11 @@ input#clientPhoneNo {
   margin-left: 20px;
 }
 
+.left .shipping__content h4 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
 .left .shipping h5 {
   margin-bottom: 10px;
 }
@@ -258,7 +340,9 @@ input#clientPhoneNo {
 }
 
 .left .footer {
-  margin-left: 110px;
+  max-width: 410px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .left .footer .contributor {
@@ -278,6 +362,8 @@ input#clientPhoneNo {
 .left .footer__content {
   font-size: 12px;
   color: #525f7a;
+  letter-spacing: -0.6px;
+  line-height: 16px;
 }
 
 .right {
@@ -286,42 +372,52 @@ input#clientPhoneNo {
 }
 
 .right-wrap {
-  max-width: 360px;
+  max-width: 370px;
 }
 
 .right .step-indicator__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 26px;
   border-bottom: 1px solid #e8ecf4;
   margin: 0 auto;
 }
 
 .right .step-indicator__list li {
   position: relative;
+  margin-right: 40px;
+}
+
+.right .step-indicator__list li:last-child {
+  margin-right: 0;
 }
 
 .right .step-indicator__list .no {
   width: 20px;
   height: 20px;
-  background-color: #f7f9fc;
+  line-height: 20px;
   border-radius: 20px;
   display: inline-block;
-  line-height: 20px;
+  background-color: #f7f9fc;
   text-align: center;
+  font-weight: normal;
+  color: #525f7a;
+  margin-right: 6px;
+  font-family: 'Eudoxus', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.right .step-indicator__list .no.active {
+  color: #fff;
+  background-color: #2d55fb;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .right .step-indicator__list > li::after {
@@ -329,7 +425,8 @@ input#clientPhoneNo {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: absolute;
-  right: -30px;
+  right: -26px;
+  top: 2px;
 }
 
 .right .step-indicator__list > li:last-child::after {
@@ -337,11 +434,11 @@ input#clientPhoneNo {
 }
 
 .right .section-holder {
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .right .info-form {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .right .info-form h3 {
@@ -354,6 +451,18 @@ input#clientPhoneNo {
 
 .right .info-form__input-field {
   margin-bottom: 20px;
+}
+
+.right .info-form__input-field label {
+  font-weight: 500;
+  position: relative;
+}
+
+.right .info-form__input-field label::after {
+  content: '*';
+  position: absolute;
+  right: -12px;
+  color: #0084ff;
 }
 
 .right .info-form__offer {
@@ -369,19 +478,61 @@ input#clientPhoneNo {
   margin-bottom: 20px;
 }
 
+.right .info-form__offer label {
+  font-weight: 600;
+}
+
 .right .info-form__offer-checkbox {
-  padding: 15px;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right .info-form__offer-checkbox div {
+  margin-left: 20px;
+}
+
+.right .info-form__offer-checkbox span {
+  color: #525f7a;
+  line-height: 2;
 }
 
 .right .info-form__offer-content {
+  color: #525f7a;
   padding: 15px;
   border-top: 1px solid #e8ecf4;
   width: 90%;
   font-size: 12px;
 }
 
+.right .info-form__offer-content p {
+  padding-right: 60px;
+}
+
 .right .info-form__confirmation {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right .info-form__confirmation div {
+  margin-left: 20px;
+}
+
+.right .info-form__confirmation span {
+  color: #8f9bb7;
+}
+
+.right .info-form__confirmation label {
+  font-size: 14px;
 }
 
 * {
@@ -399,13 +550,6 @@ input#clientPhoneNo {
 
 .right {
   width: 50%;
-}
-
-p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  font-style: normal;
 }
 
 .container {
@@ -431,7 +575,7 @@ p {
   content: '';
   position: absolute;
   top: -50px;
-  right: -100px;
+  right: -70px;
   height: 200px;
   width: 440px;
   background-color: #1c1f9eb5;
