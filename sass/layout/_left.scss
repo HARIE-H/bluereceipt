@@ -1,0 +1,140 @@
+.left{
+    padding: 40px 80px 40px 160px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    .logo{
+        font-size: 0;
+        align-self: flex-start;
+        margin-bottom: 30px;
+
+        a{
+            font-size: 0;
+            display: inline-block;
+        }
+    }
+    .checkout-card{
+        width: 430px;
+        min-height: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 100px;
+
+        align-self: end;
+
+        &__head{
+            margin-bottom: 20px;
+
+            h4{
+                color: $blue;
+                margin-bottom: 8px;
+            }
+            span{
+                color: $blue-dark;
+                letter-spacing: -2px;
+            }
+        }
+    }
+    .product-title{
+        width: 100%;
+        min-height: 200px;
+        border-radius: 10px;
+        background: $blue-medium url("../image/productCardBg.png") no-repeat top right;
+        background-size: 226px 120px;
+
+        padding: 30px;
+        margin-bottom: 20px;
+        color: #fff;
+
+        h2{
+            font-family: "Inter", sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+
+            margin-bottom: 30px;
+        }
+
+        span{
+            font-size: 22px;
+            font-family: 'Eudoxus', sans-serif;
+            font-weight: normal;
+        }
+    }
+
+    .summary-table{
+        width: 100%;
+        border-collapse: collapse;
+        border: none;
+
+        margin-bottom: 10px;
+
+        &__title{
+            text-align: left;
+            height: 30px;
+        }
+        td{
+            padding: 6px 0;
+
+            &:first-child{
+                width: 80%;
+            }
+            &:nth-child(2){
+                text-align: right;
+                width: 20%;
+            }
+        }
+    }
+
+    .shipping{
+        background-color: $blue-lightest;
+        width: 100%;
+        min-height: 60px;
+
+        border-radius: 5px;
+        display: flex;
+        padding: 15px;
+
+        &__content{
+            margin-left: 20px;
+        }
+        h5{
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+
+            &:after{
+                content: '';
+                display: inline-block;
+                background: url('../image/smileyHeartEyes.png') no-repeat center;
+                width: 30px;
+                height: 20px;
+                background-size: 20px 20px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .footer{
+        margin-left: 110px;
+
+        .contributor{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            img{
+                margin-left: 12px;
+            }
+        }
+        &__content{
+            font-size: 12px;
+            color: $blue;
+        }
+    }
+}

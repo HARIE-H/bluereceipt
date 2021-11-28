@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - blueReceipt</title>
+
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="./image/blueReceiptLogo.png">
+    <link rel="icon" href="./image/blueReceiptIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/css/intlTelInput.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.3/build/js/intlTelInput.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <a href="https://bluereceipt.com/" target="_blank">
+                    <img src="./image/blueReceiptLogo.svg" alt="Blue Receipt Logo" width="195" height="36">
+                </a>
+            </div>
+
+            <div class="checkout-card">
+                <div class="checkout-card__head">
+                    <h4 class="head-s">Pay BlueReceipt</h4>
+                    <span class="text-l">$ 169.00</span>
+                </div>
+
+                <div class="product-title">
+                    <h2>Pangea <br> Design System</h2>
+                    <span>V3.0</span>
+                </div>
+
+                <table class="summary-table" id="checkoutSummary">
+                    <caption class="summary-table__title">Summary</caption>
+                    <tr>
+                        <td>Items Subtotal:</td>
+                        <td id="itemsPrice">$169.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span id="itemCount">1</span> item</td>
+                    </tr>
+                    <tr>
+                        <td>Tax:</td>
+                        <td id="tax">$1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Order Total:</td>
+                        <td id="totalPrice">$170.00</td>
+                    </tr>
+                </table>
+
+                <div class="shipping">
+                    <img src="./image/instantDelivery.png" alt="instant Delivery" width="50" height="50">
+                    <div class="shipping__content">
+                        <h5>Instant Delivery to Email/SMS</h5>
+                        <p>Free Shipping</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="contributor">
+                    <p>Powered By</p>
+                    <img src="./image/companyBR01.png" alt="Blue Receipt" width="24" height="22"><img
+                        src="./image/companyBR02.png" alt="Company Name X" width="25" height="25"><img
+                        src="./image/companyBR03.png" alt="Company Name XX" width="25" height="25">
+                </div>
+                <p class="footer__content">
+                    BlueReceipt Subscribe; you agree to receive automated recurring automated text marketing. Data Rates
+                    may apply. Purchase is not a condition od consent. By Clicking Pay you agree to our
+                    <a href="https://bluereceipt.com/privacy-policy">T&C, Privacy</a>
+                </p>
+            </footer>
+            <div class="bgDesign"></div>
+        </div>
+
+        <div class="right">
+            <div class="right-wrap">
+                <div class="step-indicator__wrap">
+                    <ul class="step-indicator__list">
+                        <li>
+                            <span class="no">1</span>
+                            <span>Info</span>
+                        </li>
+                        <li>
+                            <span class="no">2</span>
+                            <span>Payment</span>                       
+                        </li>
+                        <li>
+                            <span class="no">3</span>
+                            <span>Confirm</span>                          
+                        </li>
+                    </ul>
+
+                    <div class="section-holder">
+                        <section class="info-form" id="infoForm">
+                            <h3>Information</h3>
+                            <div class="info-form__input-wrapper">
+                                <div class="info-form__input-field">
+                                    <label for="clientName">Name</label><br>
+                                    <input type="text" id="clientName" name="clientName" placeholder="Full Name"
+                                        required><br>
+                                </div>
+                                <div class="info-form__input-field" >
+                                    <label for="clientEmail">Email</label><br>
+                                    <input type="email" id="clientEmail" name="clientEmail" placeholder="hi@example.com"
+                                        required><br>
+                                </div>
+                                <div class="info-form__input-field">
+                                    <label for="clientPhoneNo">Phone</label><br>
+                                    <input type="tel" id="clientPhoneNo" name="clientPhoneNo"
+                                         required><br>
+                                </div>
+                            </div>
+
+                            <div class="info-form__offer">
+                                <div class="info-form__offer-checkbox">
+                                    <input type="checkbox" id="offer" name="offer">
+                                    <label for="offer">Offer Bump</label><br>
+                                    <p>$49.99</p>
+                                </div>
+                                <div class="info-form__offer-content">
+                                    One Time Offer: Want our advanced funel training? Learn the 9 funnels and how
+                                    you
+                                    can use them to doub...
+                                </div>
+                            </div>
+
+                            <div class="info-form__confirmation">
+                                <input type="checkbox" id="confirm" name="confirm">
+                                <label for="confirm">Remember Information & Sign up for Texts</label>
+                                <p>Click Continue to confirm</p>
+                            </div>
+
+                            <button class="btn">Continue</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

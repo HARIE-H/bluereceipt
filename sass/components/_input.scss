@@ -1,0 +1,63 @@
+input{
+
+    .info-form__input-wrapper &{
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        margin-top: 12px;
+        border: 2px solid #e8ecf4;
+
+        transition: all 0.5s ease;
+    }
+    &:hover{
+        border-color:#2d55fb;
+    }
+    &:focus{
+        outline: 4px solid #d6e7ff;
+        border-color:#2d55fb;
+    }
+}
+
+input#clientPhoneNo {
+
+    padding: 10px 10px 10px 86px;
+}
+
+.iti{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.iti__country-list{
+    max-height: 150px;
+    width: 338px;
+    white-space: normal;
+}
+
+.iti__flag-container{
+    padding: 0;
+    border-right: 2px solid #e8ecf4;
+    z-index: 1;
+
+    &:focus input[type=tel]{
+        outline: 4px solid #d6e7ff;
+        border-color:#2d55fb;
+    }
+}
+
+.iti__arrow{
+    margin-left: 30px;
+    position: relative;
+    border: none;
+    top: -10px;
+    left: -10px;
+
+    &::before{
+        content: url('../image/arrow.png');
+        position: absolute;
+    }
+}
+
+.iti__selected-flag{
+    padding: 0 16px 0 12px;
+}

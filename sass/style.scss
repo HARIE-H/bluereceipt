@@ -1,0 +1,65 @@
+@import "./abstracts/fonts",
+        "./abstracts/variables",
+        "./abstracts/mixins",
+        "./abstracts/placeholder";
+
+@import "./base/normalize",
+        "./base/typography";
+
+@import "./components/input",
+        "./components/button";     
+        
+@import "./layout/left",
+        "./layout/right";
+
+
+*{
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
+}
+
+.left{
+    width: 50%;
+    background-color: $blue-lightest;
+}
+
+.right{
+    width: 50%;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+  .bgDesign{
+    position: absolute;
+    top: -50px;
+    right: -90px;
+    height: 200px;
+    width: 440px;
+    border-radius: 0 0 240px 240px;
+    background-color: #2d55fb;
+    z-index: -2;
+  }
+  .bgDesign::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -100px;
+    height: 200px;
+    width: 440px;
+    background-color: #1c1f9eb5;
+    z-index: 2;
+    transform: rotate(45deg);
+}
