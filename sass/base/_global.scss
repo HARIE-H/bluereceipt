@@ -1,0 +1,30 @@
+*{
+    font-family: "Inter", Arial, Helvetica, sans-serif;;
+}
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+ 
+.bgDesign{
+    position: absolute;
+    top: -50px;
+    right: -90px;
+    height: 200px;
+    width: 440px;
+    border-radius: 0 0 240px 240px;
+    background-color: #2d55fb;
+    z-index: -2;
+}
+.bgDesign::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -70px;
+    height: 200px;
+    width: 440px;
+    background-color: #1c1f9eb5;
+    z-index: 2;
+    transform: rotate(45deg);
+}
